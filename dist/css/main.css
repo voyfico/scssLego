@@ -17,6 +17,19 @@
   margin: 1rem;
 }
 
+/* @mixin footer-ani {
+    animation-name: icon-bounce;
+    animation: 2.5s ease-in-out infinite; */
+/* @keyframes icon-bounce {
+        70% { transform:translateY(0%); }
+        80% { transform:translateY(-15%); }
+        90% { transform:translateY(0%); }
+        95% { transform:translateY(-7%); }
+        97% { transform:translateY(0%); }
+        99% { transform:translateY(-3%); }
+        100% { transform:translateY(0); }
+    } */
+/* } */
 body {
   font-family: DM Sans, 'Gill Sans';
   font-size: 1.6rem;

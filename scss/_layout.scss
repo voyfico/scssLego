@@ -1,26 +1,49 @@
 body {
-    font-family: DM Sans, 'Gill Sans';
-    font-size: 1.6rem;
-    background-color: rgb(54, 54, 54);
+  font-family: DM Sans, "Gill Sans";
+  font-size: 1.6rem;
+  background-color: rgb(54, 54, 54);
 
-    header {
-        text-align: center;
-        position: fixed;
-        width: 100vw;
-        color:rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-
-    }
+  header {
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
 }
 
 .container {
-    display: grid;
-    gap: 0.5rem;
-    .card {
-        @include cards;
-        @extend %card-img;
-    
-    }
+  display: grid;
+  gap: 0.5rem;
+  .card {
+    @include cards;
+    @extend %card-img;
+  }
 }
 
-    
+.bounce {
+  @include keyframes(bounce) {
+    70% {
+      transform: translateY(0%);
+    }
+    80% {
+      transform: translateY(-15%);
+    }
+    90% {
+      transform: translateY(0%);
+    }
+    95% {
+      transform: translateY(-7%);
+    }
+    97% {
+      transform: translateY(0%);
+    }
+    99% {
+      transform: translateY(-3%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @include animate(2.5s ease-in-out infinite);
+}
