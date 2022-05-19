@@ -1,4 +1,50 @@
-@use "reset";
-@use "variables";
-@use "layout";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.container .card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  margin: 1rem;
+}
+
+body {
+  font-family: DM Sans, 'Gill Sans';
+  font-size: 1.6rem;
+  background-color: #363636;
+}
+
+body header {
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=main.css.map */

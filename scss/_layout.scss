@@ -16,7 +16,11 @@ body {
 .container {
     display: grid;
     gap: 0.5rem;
-
-    @include cards;
-    @extend %card-img;
+    .card {
+        @include cards;
+        @extend %card-img;
+    
+    }
 }
+
+    
