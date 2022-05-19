@@ -18,5 +18,5 @@ body {
     gap: 0.5rem;
 
     @include cards;
-    @extend %card-img
+    @extend %card-img;
 }
